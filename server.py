@@ -15,7 +15,6 @@ def index():
 @app.errorhandler(HTTPException)
 def handleError(err):
     return render_template("message.html", title=err.name, message=err.description), err.code
-
 @app.route('/simulate500')
 def simulate500():
     return abort(500)
