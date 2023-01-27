@@ -18,8 +18,6 @@ def handleError(err):
 def simulate500():
     return abort(500)
 
-
-
 @app.route('/simulate501')
 def simulate501():
     return abort(501)
