@@ -11,7 +11,6 @@ def index():
 # @app.errorhandler(500)
 # def handleError(err):
 #     return render_template("message.html", title=err.name, message=err.description), err.code
-
 @app.errorhandler(HTTPException)
 def handleError(err):
     return render_template("message.html", title=err.name, message=err.description), err.code
